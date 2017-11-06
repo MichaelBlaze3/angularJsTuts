@@ -21,7 +21,7 @@ AngularJS is a JavaScript framework designed for creating Single Page Applicatio
 ## Model View viewModel
 Its intent is to provide a clean separation of **concerns** between the user interface controls and their logic. 
 
-There are three core components in the MVVM pattern: the Model, the View, and the view model. 
+There are three core components in the MVVM pattern: the **Model**, the **View**, and the **view model**. 
 
 The components are decouple from each other, this allows us to: 
 
@@ -33,3 +33,47 @@ The components are decouple from each other, this allows us to:
 
 
 ## Single Resposability
+### Rule of 1
+Define 1 component per file, recommended to be less than 400 lines of code.
+
+This allows us to:
+* Perfom Unit testing much easier.
+* Read, maintain, and avoid name collisions with teams in source control.
+
+The following examples defines the `app` module and its dependencies, defines a controller, a factory all in the same file.
+
+```javascript
+    /* avoid */
+    angular
+        .module('app', ['ngRouter'])
+        .controller('SomeController', SomeController)
+        .factory('someFactory', someFactory);
+
+    function SomeController() { }
+
+    function someFactory() { }
+```
+
+The same components are now separated into their own files.
+
+```javascript
+    /* recommended */
+    
+    /* app.module.js */
+    angular
+        .module('app', ['ngRouter']); 
+    
+    /* someController.js */ 
+    angular
+        .module('app')
+        .controller('SomeController', SomeController);
+
+    function SomeController() { }
+
+    /* someFactory.js */ 
+    angular
+        .module('app')
+        .factory('someFactory', someFactory);
+        
+    function someFactory() { }
+```
