@@ -1,7 +1,7 @@
 # AngularJS - Tutorial and Samples
 
 ## General
-* [What is AngularJS?](#what-is-angularjs?)    
+* [What is AngularJS?](#what-is-angularjs-?)    
 * [Model View - View Model](#model-view-viewmodel)
 * [Single Responsability](#single-resposability)
 
@@ -15,7 +15,7 @@
 7. [Filters]()
 8. [Animations]()
 
-## What is AngularJS?
+## What is AngularJS ?
 AngularJS is a JavaScript framework designed for creating Single Page Applications(SPA) mainly maintained by Google.
 
 ## Model View viewModel
@@ -74,6 +74,6 @@ The same components are now separated into their own files.
     angular
         .module('app')
         .factory('someFactory', someFactory);
-        
+
     function someFactory() { }
 ```
