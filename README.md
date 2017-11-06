@@ -2,7 +2,7 @@
 
 ## General
 * [What is AngularJS?](http://)    
-* [Model View - View Model](htt://)
+* [Model View - View Model](http://)
 * [Single Responsability]()
 
 ## Content
