@@ -2,7 +2,7 @@
 
 ## General
 * [What is AngularJS?](#what-is-angularjs)    
-* [Model View - View Model](#model-view-viewmodel)
+* [Model - View - viewModel](#model-view-viewmodel)
 * [Single Responsability](#single-resposability)
 
 ## Content
