@@ -15,6 +15,11 @@
 7. [Filters]()
 8. [Animations]()
 
+## Resources
+[AngularJS Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+
+[The MVVM Pattern](https://msdn.microsoft.com/en-us/library/hh848246.aspx)
+
 ## What is AngularJS
 AngularJS is a JavaScript framework designed for creating Single Page Applications(SPA) mainly maintained by Google.
 
