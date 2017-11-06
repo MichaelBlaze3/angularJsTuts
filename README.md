@@ -7,11 +7,11 @@
 
 ## Content
 This tutorial will cover the most essentials
-* [Modules]()
-* [Controllers]()
-* [Services]()
-* [Factories]()
-* [Directives]()
-* [Routing]()
-* [Filters]()
-* [Animation]()
+1. [Modules]()
+2. [Controllers]()
+3. [Services]()
+4. [Factories]()
+5. [Directives]()
+6. [Routing]()
+7. [Filters]()
+8. [Animations]()
