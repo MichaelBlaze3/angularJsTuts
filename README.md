@@ -1,4 +1,4 @@
-<!-- ![alt text](https://github.com/MichaelBlaze3/angularJsTuts/blob/master/_assets/ModelViewViewModel.jpeg "Model View viewModel") -->
+![alt text](https://github.com/MichaelBlaze3/angularJsTuts/blob/master/_assets/angularjs2.png "AngularJS Logo")
 # AngularJS - Tutorial and Samples
 
 ## General
