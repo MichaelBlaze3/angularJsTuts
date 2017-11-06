@@ -19,5 +19,7 @@
 AngularJS is a JavaScript framework designed for creating Single Page Applications(SPA) mainly maintained by Google.
 
 ### Model View View Model
+![alt text](https://github.com/MichaelBlaze3/angularJsTuts/blob/master/_assets/ModelViewViewModel.jpeg "Logo Title Text 1")
+
 
 ### Single Resposability
