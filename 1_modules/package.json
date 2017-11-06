@@ -1,0 +1,17 @@
+{
+  "name": "1_modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.module.js",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.10",
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

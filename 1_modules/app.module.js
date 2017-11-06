@@ -1,10 +1,11 @@
 (function() {
     'use strict';
 
-    angular.module('module', [
+    angular.module('main', [
         // Internal dependencies
-
+        'internal',
         // 3rd party dependencies
-        
+        'external'
+
     ]);
 })();
