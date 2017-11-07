@@ -7,7 +7,7 @@
 * [Single Responsability](#single-resposability)
 
 ## Content
-1. [Modules]()
+1. [Modules](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/1_modules)
 2. [Controllers]()
 3. [Services]()
 4. [Factories]()
