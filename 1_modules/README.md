@@ -14,7 +14,6 @@ We can create separate Javascript files for each module shown below.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
         <title>AngularJS - Modules</title>
     </head>
     <body>
@@ -22,7 +21,6 @@ We can create separate Javascript files for each module shown below.
         <div ng-controller="MainCtrl">
             <h2>{{description}}</h2>
         </div>
-
         <script src="./node_modules/angular/angular.min.js"></script>
         <script src="main.module.js"></script>
         <script src="main.controller.js"></script>
