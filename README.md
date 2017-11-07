@@ -8,7 +8,7 @@
 
 ## Content
 1. [Modules](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/1_modules)
-2. [Controllers](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/2_controllers))
+2. [Controllers](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/2_controllers)
 3. [Services]()
 4. [Factories]()
 5. [Directives]()
