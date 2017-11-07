@@ -8,46 +8,46 @@ We can create separate Javascript files for each module shown below.
 
 **index.html**
 ```html
-    <!DOCTYPE html>
-    <html lang="en" ng-app="main">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>AngularJS - Modules</title>
-    </head>
-    <body>
-        <h1>AngularJS Tutorial</h1>
-        <div ng-controller="MainCtrl">
-            <h2>{{description}}</h2>
-        </div>
-        <script src="./node_modules/angular/angular.min.js"></script>
-        <script src="main.module.js"></script>
-        <script src="main.controller.js"></script>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en" ng-app="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS - Modules</title>
+</head>
+<body>
+    <h1>AngularJS Tutorial</h1>
+    <div ng-controller="MainCtrl as vm">
+        <h2>{{vm.description}}</h2>
+    </div>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="main.module.js"></script>
+    <script src="main.controller.js"></script>
+</body>
+</html>
 ```
 
 **main.module.js**
 ```javascript
-    (function() {
-        'use strict';
-        angular.module('main', []);
-    })();
+(function() {
+    'use strict';
+    angular.module('main', []);
+})();
 ```
 
 **main.controller.js**
 ```javascript
-    (function() {
-        'use strict';
-        angular
-            .module('main')
-            .controller('MainCtrl', MainCtrl);
-        function MainCtrl(){
-            var vm = this;
-            vm.description = "This is a controller sample";
-        }
-    })();
+(function() {
+    'use strict';
+    angular
+        .module('main')
+        .controller('MainCtrl', MainCtrl);
+    function MainCtrl(){
+        var vm = this;
+        vm.description = "This is a controller sample";
+    }
+})();
 ```
 
 
