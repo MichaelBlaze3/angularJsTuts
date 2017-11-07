@@ -6,7 +6,7 @@ We can think of a module as a container for the different parts of your app - co
 ## Modules in separate files
 We can create separate Javascript files for each module shown below.
 
-index.html
+**index.html**
 ```html
     <!DOCTYPE html>
     <html lang="en" ng-app="main">
@@ -30,7 +30,7 @@ index.html
     </html>
 ```
 
-main.module.js
+**main.module.js**
 ```javascript
     (function() {
         'use strict';
@@ -38,7 +38,7 @@ main.module.js
     })();
 ```
 
-main.controller.js
+**main.controller.js**
 ```javascript
     (function() {
         'use strict';
