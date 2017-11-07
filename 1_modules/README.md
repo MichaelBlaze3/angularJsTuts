@@ -24,7 +24,8 @@ index.html
         </div>
 
         <script src="./node_modules/angular/angular.min.js"></script>
-        <script src="app.module.js"></script>
+        <script src="main.module.js"></script>
+        <script src="main.controller.js"></script>
     </body>
     </html>
 ```
