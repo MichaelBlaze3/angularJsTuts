@@ -6,6 +6,7 @@ We can think of a module as a container for the different parts of your app - co
 ## Modules in separate files
 We can create separate Javascript files for each module shown below.
 
+index.html
 ```html
     <!DOCTYPE html>
     <html lang="en" ng-app="main">
@@ -13,32 +14,41 @@ We can create separate Javascript files for each module shown below.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
         <link rel="stylesheet" href="style.css">
-
-        <title>ngModules</title>
+        <title>AngularJS - Modules</title>
     </head>
     <body>
         <h1>AngularJS Tutorial</h1>
-
-        <h2>Animations</h2>
-        <div ng-init="checked = true">
-            <label>
-                <input type="checkbox" ng-model="checked" /> Is visible
-            </label>
-            <div class="content-area sample-show-hide" ng-show="checked">
-                Content...
-            </div>
+        <div ng-controller="MainCtrl">
+            <h2>{{description}}</h2>
         </div>
 
         <script src="./node_modules/angular/angular.min.js"></script>
-        <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
-        <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
-
         <script src="app.module.js"></script>
-        <script src="internal.module.js"></script>
-        <script src="external.module.js"></script>
-
     </body>
     </html>
 ```
+
+main.module.js
+```javascript
+    (function() {
+        'use strict';
+        angular.module('main', []);
+    })();
+```
+
+main.controller.js
+```javascript
+    (function() {
+        'use strict';
+        angular
+            .module('main')
+            .controller('MainCtrl', MainCtrl);
+        function MainCtrl(){
+            var vm = this;
+            vm.description = "This is a controller sample";
+        }
+    })();
+```
+
+
