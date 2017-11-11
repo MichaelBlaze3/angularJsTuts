@@ -122,5 +122,6 @@ The same components are now separated into their own files.
 ```
 
 ## ngApp
+The **ng-app** directive initializes the AngularJS framework automatically. AngularJS will look first for ng-app directive in the HTML document after the entire document is loaded and if ng-app is found, it bootstraps itself and compiles the HTML template.
 
 ## AngularJS Expression
