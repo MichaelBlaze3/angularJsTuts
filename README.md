@@ -6,7 +6,8 @@
 * [AngularJS Setup](#angularjs-setup)   
 * [Model - View - viewModel](#model-view-viewmodel)
 * [Single Responsability](#single-resposability)
-
+* [ngApp](#ngapp)
+* [AngularJS Expression](#angularjs-expression)
 
 ## Content
 1. [Modules](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/1_modules)
@@ -119,3 +120,7 @@ The same components are now separated into their own files.
 
     function someFactory() { }
 ```
+
+## ngApp
+
+## AngularJS Expression
