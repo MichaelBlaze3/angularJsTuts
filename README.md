@@ -1,10 +1,12 @@
 ![alt text](https://github.com/MichaelBlaze3/angularJsTuts/blob/master/_assets/angularjs2.png "AngularJS Logo")
 # AngularJS - Tutorial and Samples
 
-## General
-* [What is AngularJS?](#what-is-angularjs)    
+## About AngularJS
+* [What is AngularJS?](#what-is-angularjs) 
+* [AngularJS Setup](#angularjs-setup)   
 * [Model - View - viewModel](#model-view-viewmodel)
 * [Single Responsability](#single-resposability)
+
 
 ## Content
 1. [Modules](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/1_modules)
@@ -23,6 +25,39 @@
 
 ## What is AngularJS
 AngularJS is a JavaScript framework designed for creating Single Page Applications(SPA) mainly maintained by Google.
+
+## AngularJS Setup
+There are different ways to add AngularJS into the project.
+### CDN (Content Distribution Network)
+The easiest and quickest way to start an AngularJS project is to point your html `<script>` tag to a **CDN** URL. By doing it this way, you dont have to download or maintain a local copy.
+
+Here is an example using CDN.
+```html
+<!doctype html>
+<html ng-app>
+    <head>
+        <title>My First AngularJS App</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    </head>
+    <body>
+    </body>
+</html>    
+```
+### NPM (Node Package Manager)
+NPM is a package manager for Node.js packages.www.npmjs.com hosts thousands of free packages to download and use.
+
+The NPM program is installed on your computer when you install Node.js.
+
+To install the AngularJS package into your project, enter the following instruction:
+
+$ sudo **npm install angular@1.6.6** --save
+
+### Manually
+You can download a copy of AngularJS to your project manually, just go to the AngularJS web portal.
+
+URL: **https://angularjs.org** 
+
+After finish the download, just unzip the content and make the necessary files accesible to your HTML by using the `<script>` tag.
 
 ## Model View viewModel
 Its intent is to provide a clean separation of **concerns** between the user interface controls and their logic. 

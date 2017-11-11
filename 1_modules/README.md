@@ -87,3 +87,6 @@ angular.module('myModule', [])
     });
 ```
 
+### Configuration blocks
+
+### Run blocks
