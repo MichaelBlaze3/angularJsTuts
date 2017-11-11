@@ -50,6 +50,7 @@ The NPM program is installed on your computer when you install Node.js.
 
 To install the AngularJS package into your project, enter the following instruction:
 
+
 $ sudo **npm install angular@1.6.6** --save
 
 ### Manually
