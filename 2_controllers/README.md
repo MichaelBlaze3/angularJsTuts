@@ -49,4 +49,49 @@ The following example will show how to add properties and behavior to the contro
 
 In this example, we are adding properties like the email and password, but also, we are adding some behavior by adding a function that reacts when the users is trying to send some information through the form.
 
-The controller catches that interaction and displays it into the console
+The controller catches that interaction and displays it into the console.
+
+**Important**: Using the traditional way(injecting $scope into controller) can sometimes be a little difficult to keep track of all the variables specially if you use multiple controllers into the same view. That is why AngularJS provides some additional functionallity to the controller by implementing the `controllerAs` method.
+
+## controllerAs
+Using the `as` keyword allows us to provide an allias for each of the controllers. 
+
+```html
+<!DOCTYPE html>
+<html ng-app="myFirstApp"> 
+    <head>
+        <title>My First Application</title>
+    </head>
+    <body>
+        <div ng-controller = "MainController as main">
+            <form ng-submit="main.sendMyData()">
+                <input type="email" placeholder="Email" ng-model="main.email"><br />
+                <input type="password" placeholder="Password" ng-model="main.password"><br />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script src="./node_modules/angular/angular.min.js"></script>
+        <script src="./app/controller/main.controller.js"></script>
+    </body>
+</html>
+```
+
+```javascript
+(function()
+    angular
+        .module('myFirstApp',[])
+        .controller('MainController', MainController);
+    
+    function MainController(){
+        var vm = this;
+        vm.sendMyData = sendMyData;
+        vm.email = "example@example.com";
+        vm.password = "sample";
+
+        function sendMyData(){
+            console.log("My Email: " + vm.email);
+            console.log("My Password: " + vm.password);
+        }
+    }
+)();
+```
