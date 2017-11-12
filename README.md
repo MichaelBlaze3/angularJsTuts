@@ -124,4 +124,31 @@ The same components are now separated into their own files.
 ## ngApp
 The **ng-app** directive initializes the AngularJS framework automatically. AngularJS will look first for ng-app directive in the HTML document after the entire document is loaded and if ng-app is found, it bootstraps itself and compiles the HTML template.
 
+The `ng-app` directive usually is place at the root of the html document for example at the `<html>` or `<body>` tag, so it can control the entire DOM. However, you can place in any DOM element.
+
+Here is an example:
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Showing the ngApp directive in action</title>
+        <script src="./node_modules/angular/angular.min.js"></script>
+    </head>
+    <body>
+        <div>
+            {{2/2}}   //AngularJS functionallity is not supported outside the ng-app directive
+        </div>
+        /*
+        *   AngularJS features are supported only inside the ng-app
+        */    
+        <div ng-app>
+            <h1>{{title}}</h1>
+            <div>
+                {{10/2}}
+            </div>
+        </div>
+    </body>
+</html>
+```
+
 ## AngularJS Expression
