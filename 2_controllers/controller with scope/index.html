@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AngularJS sample using $scope</title>
+</head>
+<body>
+
+    <div ng-controller="MainController">
+        <form ng-submit="sendMyData()">
+            <input type="email" placeholder="Email" ng-model="email"><br/>
+            <input type="password" placeholder="Password" ng-model="password"><br/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="./app/main.controller.js"></script>
+</body>
+</html>
