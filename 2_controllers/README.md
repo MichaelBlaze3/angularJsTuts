@@ -31,7 +31,7 @@ The following example will show how to add properties and behavior to the contro
 ```javascript
 (function()
     angular
-        .module('myFirstApp')
+        .module('myFirstApp',[])
         .controller('MainController', MainController);
     
     function MainController($scope){
