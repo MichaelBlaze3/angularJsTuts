@@ -141,14 +141,60 @@ Here is an example:
         /*
         *   AngularJS features are supported only inside the ng-app
         */    
-        <div ng-app>
-            <h1>{{title}}</h1>
-            <div>
-                {{10/2}}
+        <div ng-app="myAppTutorial">
+            <div ng-controller="myController">
+                <h1>{{title}}</h1>
+                <div>
+                    {{10/2}}
+                </div>
             </div>
         </div>
+        <script>
+            var app = angular.module('myAppTutorial', []);
+            app.controller('myController', function($scope){
+                $scope.title = "Welcome to My AngularJS tutorial";
+            });
+        </script>
     </body>
 </html>
 ```
 
 ## AngularJS Expression
+AngularJS expression is like Javascript expression surrounded with braces {{ expression }}. AngularJS evaluates the specified expression and binds the result data to HTML.
+
+AngularJS expression can contain literals, operators and variables like Javascript expression. 
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Showing Expressions in action</title>
+        <script src="./node_modules/angular/angular.min.js"></script>
+    </head>
+    <body>    
+        <div ng-app="myAppTutorial">
+            <div ng-controller="myController">
+                <h1>{{title}}</h1>
+                <div>
+                    2 + 2 = {{2+2}} <br />
+                    2 - 2 = {{2-2}} <br />
+                    2 * 2 = {{2*2}} <br />
+                    2 / 2 = {{2/2}} <br />
+                </div>
+            </div>
+        </div>
+        <script>
+            var app = angular.module('myAppTutorial', []);
+            app.controller('myController', function($scope){
+                $scope.title = "Welcome to My AngularJS tutorial";
+            });
+        </script>
+    </body>
+</html>
+```
+
+AngularJS expression is like Javascript code expression except for the following differences:
+* Expressions cannot contain conditions, loops, exceptions or regular expressions like ig-else, ternary, for loop, while loop, etc.
+* AngularJS expression cannot declare functions.
+* AngularJS expression cannot contain comma or void.
+* AngularJS expression cannot contain return keyword.
