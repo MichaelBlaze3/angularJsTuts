@@ -12,11 +12,11 @@
 ## Content
 1. [Modules](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/1_modules)
 2. [Controllers](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/2_controllers)
-3. [Services & Factories](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/3_services_&_factories)
-4. [Directives]()
-5. [Routing]()
-6. [Filters]()
-7. [Animations]()
+3. [Services & Factories](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/3_services%20%26%20factories)
+4. [Directives](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/4_directives)
+5. [Routing](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/5_routing)
+6. [Filters](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/6_filters)
+7. [Animations](https://github.com/MichaelBlaze3/angularJsTuts/tree/master/7_animations)
 
 ## Resources
 [AngularJS Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
