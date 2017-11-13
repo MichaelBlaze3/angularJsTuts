@@ -13,7 +13,7 @@ First, get the file:
 where X.Y.Z is the AngularJS version you are running.
 
 Then, include angular-animate.js in your HTML:
-```javascript
+```html
 <script src="path/to/angular.js"></script>
 <script src="path/to/angular-animate.js"></script>
 ```
