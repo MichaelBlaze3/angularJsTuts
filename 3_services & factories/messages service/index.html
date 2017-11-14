@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title>AngularJS Services Sample</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/services/messages.service.js"></script>   
+        <script src="app/controllers/list.controller.js"></script>
+        <script src="app/controllers/post.controller.js"></script>   
+
+    </head>
+    <body>
+        <div ng-controller="ListCtrl as vm">
+            <p ng-repeat="message in vm.messages">{{message.id }} : {{message.text}}</p>
+        </div>
+
+        <div ng-controller="PostCtrl as vm">
+            <form ng-submit="vm.addMessage(vm.newMessage)">
+                <input type="text" ng-model="vm.newMessage">
+                <button type="submit">Add Message</button>
+            </form>
+        </div>
+
+    </body>
+</html>
